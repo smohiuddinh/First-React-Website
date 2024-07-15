@@ -30,7 +30,7 @@ export default function ContactMe() {
 
     return (
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 bg-contactColor ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 bg-contactColor  text-black ">
             <div className="d-none d-md-block">
                 <img src="src/images/form.png" />
             </div>
@@ -46,7 +46,7 @@ export default function ContactMe() {
                             value={formData.input1}
                             onChange={handleInputChange}
                             id="input1"
-                            className="w-full py-2 px-3 text-lg border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+                            className="  text-black w-full py-2 px-3 text-lg border border-gray-300 rounded focus:outline-none focus:border-blue-500"
                             placeholder="Enter your name"
                         />
                     </div>
@@ -58,7 +58,7 @@ export default function ContactMe() {
                             value={formData.input2}
                             onChange={handleInputChange}
                             id="input2"
-                            className="w-full py-2 px-3 text-lg border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+                            className="w-full py-2 px-3 text-lg border text-black border-gray-300 rounded focus:outline-none focus:border-blue-500"
                             placeholder="Enter your email"
                         />
                     </div>
@@ -96,7 +96,7 @@ export default function ContactMe() {
                             />
                             Male
                         </label>
-                        <label className="font-semibold flex items-center">
+                        <label className=" text-black font-semibold flex items-center">
                             <input
                                 type="radio"
                                 name="radio"
@@ -115,7 +115,7 @@ export default function ContactMe() {
                             value={formData.select}
                             onChange={handleInputChange}
                             id="select"
-                            className="w-full py-2 px-3 text-lg border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+                            className=" hover:text-black w-full py-2 px-3 text-lg border border-gray-300 rounded focus:outline-none focus:border-blue-500"
                         >
                             <option value="">Select an option</option>
                             <option value="Help Center">Help Center</option>
@@ -124,13 +124,13 @@ export default function ContactMe() {
                         </select>
                     </div>
                     <div>
-                        <label className="font-semibold mb-1" htmlFor="textarea">Message:</label>
+                        <label className="font-semibold mb-1 hover:text-black " htmlFor="textarea">Message:</label>
                         <textarea
                             name="textarea"
                             value={formData.textarea}
                             onChange={handleInputChange}
                             id="textarea"
-                            className="w-full py-2 px-3 text-lg border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+                            className="w-full py-2 px-3 text-lg border  hover:text-black border-gray-300 rounded focus:outline-none focus:border-blue-500"
                             rows="4"
                             placeholder="Write your message here"
                         ></textarea>
